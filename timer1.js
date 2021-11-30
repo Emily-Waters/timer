@@ -7,9 +7,9 @@ const alarmClock = (timesToDing) => {
       if (!isNaN(currentNum) && currentNum > 0) {
         setTimeout(() => {
           if (index + 2 <  array.length) {
-            process.stdout.write(`\rDing at => ${element}s`);
+            process.stdout.write(`\rDing! at => ${element}s`);
           } else {
-            process.stdout.write(`\rDing at => ${element}s\n`);
+            process.stdout.write(`\rDing! at => ${element}s\n`);
           }
           process.stdout.write('\x07');
         }, 1000 * element);
